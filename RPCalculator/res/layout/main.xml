@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://www.gueei.com/android-binding/"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1,2,3,4" >
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/Solution"
+                android:layout_span="5"
+                android:gravity="right"
+                android:singleLine="true"
+                android:textSize="50dip" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/ToCalculate"
+                android:layout_span="5"
+                android:gravity="bottom"
+                android:singleLine="true" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/plus"
+                android:text=" + " />
+
+            <Button
+                android:id="@+id/minus"
+                android:text=" - " />
+
+            <Button
+                android:id="@+id/multiply"
+                android:text=" * " />
+
+            <Button
+                android:id="@+id/divide"
+                android:text=" / " />
+
+            <Button
+                android:id="@+id/clear"
+                android:text="c" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/num1"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/num2"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/num3"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/Sin"
+                android:layout_span="2"
+                android:text=" Sin " />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/num4"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/num5"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/num6"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/Cos"
+                android:layout_span="2"
+                android:text=" Cos " />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/num7"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/num8"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/num9"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/Tan"
+                android:layout_span="2"
+                android:text=" Tan " />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+        <TableLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="3" >
+            <TableRow>
+                <Button
+                    android:id="@+id/num0"
+                    android:text="0" />
+                <Button
+                    android:id="@+id/decimal"
+                    android:text="." />
+                <Button
+                    android:id="@+id/x"
+                    android:text=" x " />
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:id="@+id/sqrt"
+                    android:text="sqrt" />
+                <Button
+                    android:id="@+id/saveX"
+                    android:layout_span="2"
+                    android:text="save x" />
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:id="@+id/space"
+                    android:layout_span="3"
+                    android:text="space" />
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/equals"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:text="=" />
+    </LinearLayout>
+</LinearLayout>
